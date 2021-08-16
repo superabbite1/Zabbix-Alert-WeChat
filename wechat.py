@@ -47,7 +47,7 @@ def SendMessage(User,Agentid,Subject,Content):
         },
         "safe": "0"
     }
-    r = requests.post(url=Url,data=json.dumps(Data),verify=False)
+    r = requests.post(url=Url,data=json.dumps(Data,ensure_ascii=False),verify=False)
     while r.json()['errcode'] != 0 and n < 4:
         n+=1
         Token = GetTokenFromServer(Corpid, Secret)
