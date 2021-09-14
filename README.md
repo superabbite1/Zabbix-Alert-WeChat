@@ -2,6 +2,18 @@
 ## 作者:火星小刘 邮箱:xtlyk@163.com   
 ## **https://www.zabbix.com/cn/integrations/wechat** 本项目zabbix官方推荐位列第一，值得信赖
 
+### 2021-09-14
+更新python3脚本
+
+需要使用python2脚本请使用2021-8-16历史版本
+另：因python2 pip等停止支持安装方式更新如下
+#安装pip
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python get-pip.py
+#安装组件
+pip install requests
+pip install --upgrade requests
+
 ### 2021-08-16
 1. 修复告警信息有中文的话就显示不正常得问题。
 2. 问题：最开始的时候微信是可以正常收到告警信息的，但是过了一段时间以后就收不到信息了，大概2个小时以后就收不到任何信息了，但是zabbix动作日志中是正常发送的。我在/tmp/zabbix_wechat_config.json文件中看到里面的access_token信息一直都没有更新，都是旧的数据。
