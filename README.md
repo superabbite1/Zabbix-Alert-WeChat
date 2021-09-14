@@ -7,9 +7,11 @@
 
 需要使用python2脚本请使用2021-8-16历史版本
 另：因python2 pip等停止支持安装方式更新如下
+
 #安装pip
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python get-pip.py
+
 #安装组件
 pip install requests
 pip install --upgrade requests
