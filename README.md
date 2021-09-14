@@ -9,16 +9,16 @@
 另：因python2 pip等停止支持安装方式更新如下
 
 #安装pip
-
+```shell
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-
 python get-pip.py
+```
 
 #安装组件
-
+```shell
 pip install requests
-
 pip install --upgrade requests
+```
 
 ### 2021-08-16
 1. 修复告警信息有中文的话就显示不正常得问题。
